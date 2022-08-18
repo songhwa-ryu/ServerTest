@@ -2,13 +2,13 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const { Client } = require('pg')
-const dbInfo = { } // require('../DB/dbInfo')
+//const dbInfo = { } // require('../DB/dbInfo')
 app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-dbInfo = {
+const dbInfo = {
     user:'dllwujxicncmqb'
     ,password:'b0b7a4db64bd1588ee574ecfcd53946fcae19de8b74dc7c529f37a51470dc3a9'
     ,port:5432
