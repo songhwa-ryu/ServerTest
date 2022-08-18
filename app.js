@@ -8,6 +8,15 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
+dbInfo = {
+    user:'dllwujxicncmqb'
+    ,password:'b0b7a4db64bd1588ee574ecfcd53946fcae19de8b74dc7c529f37a51470dc3a9'
+    ,port:5432
+    ,host:'ec2-54-85-56-210.compute-1.amazonaws.com'
+    ,database:'dl73h2u11pksr'
+    ,ssl:{rejectUnauthorized:false}
+}
+
 app.get('/', (req,res)=>{
     res.send('Success')
 })
