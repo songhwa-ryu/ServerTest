@@ -42,6 +42,7 @@ app.get('/language_all/', (req, res)=>{
 })
 
 app.get('/language/:lan', (req, res)=>{
+    //console.log('aaa', req.params.lan)
     const lan = req.params.lan
     const client = new Client(dbInfo)
     client.connect()
