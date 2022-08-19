@@ -110,14 +110,6 @@ app.post('/language/',(req, res)=>{
 
     let msg = ''
 
-    const dbInfo = {
-        user:'postgres'
-        ,password:'ais220701'
-        ,port:5432
-        ,host:'localhost'
-        ,database:'Test_0802'
-    }
-
     const client = new Client(dbInfo)
     client.connect()
     .then(()=>{
