@@ -25,9 +25,9 @@ app.get('/kor',(req, res)=>{
     res.send('안녕하세요')
 })
 
-app.get('/eng',(req, res)=>{
-    res.send('Hello')
-})
+// app.get('/eng',(req, res)=>{
+//     res.send('Hello')
+// })
 
 app.get('/jap',(req, res)=>{
     res.send('おはよう！')
